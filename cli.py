@@ -3,8 +3,7 @@ from datetime import datetime
 import re
 import sqlite3
 
-def parse_date(date_str):
-    try:
+def parse
         return datetime.strptime(date_str, "%Y-%m-%d")
     except ValueError:
         raise argparse.ArgumentTypeError("Date must be YYYY-MM-DD")
